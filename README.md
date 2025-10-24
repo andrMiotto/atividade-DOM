@@ -2,8 +2,6 @@
 
 Projeto de exercícios práticos sobre o DOM (Document Object Model). Este repositório contém exemplos e atividades para manipular a árvore DOM usando JavaScript puro, com foco em seleção de elementos, criação e remoção de nós, manipulação de eventos e atualização dinâmica de conteúdo.
 
-> Observação: ajuste este README conforme o conteúdo real do repositório (nomes de arquivos, comandos, e dependências).
-
 ## Conteúdo / Objetivos
 - Praticar seleção de elementos do DOM (querySelector, getElementById, etc.)
 - Adicionar, remover e modificar elementos dinamicamente
@@ -14,7 +12,6 @@ Projeto de exercícios práticos sobre o DOM (Document Object Model). Este repos
 - HTML5
 - CSS3 (opcional)
 - JavaScript (ES6+)
-- (Opcional) Node.js para servir localmente com ferramentas de desenvolvimento
 
 ## Como executar (local)
 Este repositório provavelmente é um conjunto de arquivos estáticos. Há algumas formas simples de executar localmente:
@@ -77,11 +74,3 @@ Se encontrar problemas ou quiser sugerir melhorias, abra uma issue descrevendo:
 - Comportamento esperado
 - Comportamento atual
 - Logs/prints (se aplicável)
-
-## Licença
-Escolha e adicione uma licença apropriada (ex.: MIT). Atualmente este repositório não especifica uma licença.
-
-## Personalize este README
-Se desejar, posso:
-- Ajustar o README automaticamente para refletir os arquivos reais do repositório (listar cada arquivo e explicar o que faz) — se você permitir, eu posso ler o conteúdo do repositório e atualizar o README com informações precisas.
-- Adicionar badges (ex.: build, coverage), exemplos de uso mais detalhados ou instruções de deploy.
