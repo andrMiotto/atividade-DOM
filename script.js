@@ -1,10 +1,7 @@
-
-
 const adicionar = document.getElementById('adicionar');
-const subtrair = document.getElementById('subtrair')
+const subtrair = document.getElementById('subtrair');
 const contador = document.getElementById('contador');
 let count = 0;
-
 
 adicionar.addEventListener('click', () => {
     count++;
@@ -16,55 +13,28 @@ subtrair.addEventListener('click', () => {
     contador.textContent = count;
 });
 
+const conteudo = document.getElementById('conteudo');
+const titulo = document.getElementById('titulo');
+const paragrafo = document.getElementById('paragrafo');
 
-const btnCorFundo = document.getElementById('btnCorFundo');
-
-let conteudo = document.getElementById('conteudo')
-
-
-btnCorFundo.addEventListener('click', function () {
-
+function corAleatoria() {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+}
 
-    conteudo.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-
+document.getElementById('btnCorFundo').addEventListener('click', () => {
+    conteudo.style.backgroundColor = corAleatoria();
 });
 
-
-const btnCorTitulo = document.getElementById('btnCorTitulo');
-
-const titulo = document.getElementById('titulo')
-
-btnCorTitulo.addEventListener('click', function () {
-
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-
-    titulo.style.color = `rgb(${r}, ${g}, ${b})`;
-
+document.getElementById('btnCorTitulo').addEventListener('click', () => {
+    titulo.style.color = corAleatoria();
 });
 
-const btnCorParagrafo = document.getElementById('btnCorParagrafo');
-
-const paragrafo = document.getElementById('paragrafo')
-
-btnCorParagrafo.addEventListener('click', function () {
-
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-
-    paragrafo.style.color = `rgb(${r}, ${g}, ${b})`;
-
+document.getElementById('btnCorParagrafo').addEventListener('click', () => {
+    paragrafo.style.color = corAleatoria();
 });
-
-
-
-const btnFonteTitulo = document.getElementById('btnFonteTitulo');
-
 
 const fontes = [
     'Roboto', 'Open Sans', 'Lato', 'Montserrat', 'Oswald',
@@ -72,31 +42,12 @@ const fontes = [
     'Playfair Display', 'Roboto Slab', 'Source Sans Pro', 'Fira Sans', 'Indie Flower'
 ];
 
-btnFonteTitulo.addEventListener('click', function () {
-
+document.getElementById('btnFonteTitulo').addEventListener('click', () => {
     const fonteRandom = fontes[Math.floor(Math.random() * fontes.length)];
-
-
     titulo.style.fontFamily = `'${fonteRandom}', sans-serif`;
 });
 
-
-
-
-
-const btnFonteParagrafo = document.getElementById('btnFonteParagrafo');
-
-
-btnFonteParagrafo.addEventListener('click', function () {
-
+document.getElementById('btnFonteParagrafo').addEventListener('click', () => {
     const fonteRandom = fontes[Math.floor(Math.random() * fontes.length)];
-
-
     paragrafo.style.fontFamily = `'${fonteRandom}', sans-serif`;
 });
-
-
-
-
-
-

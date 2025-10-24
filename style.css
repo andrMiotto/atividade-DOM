@@ -1,66 +1,87 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-.centralizar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.botoes {}
-
-#adicionar {
-    padding: 10px 20px;
-
-}
-
-
-
-#subtrair {
-    padding: 10px 20px;
-
-}
-
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
-}
-
-#conteudo {
-    gap: 20px;
-    background-color: antiquewhite;
-    height: 100vh;
-
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-
-.fundo-azul {
-    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
-    color: #002661;
+#conteudo {
+    background-color: #fff4e1;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    transition: background-color 0.3s ease;
 }
 
-.fundo-verde {
-    background: linear-gradient(135deg, #a8ff78, #78ffd6);
-    color: #0a3d04;
+.header {
+    text-align: center;
+}
+
+#titulo {
+    font-size: 60px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, font-family 0.3s ease;
+}
+
+#paragrafo {
+    font-size: 20px;
+    color: #555;
+    transition: color 0.3s ease, font-family 0.3s ease;
+}
+
+.centralizar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 #contador {
     font-size: 100px;
+    color: #ff6f61;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+}
+
+.botoes button,
+.estilos button {
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.botoes button {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.botoes button:hover {
+    background-color: #ff3b2e;
+    transform: scale(1.05);
+}
+
+.estilos button {
+    background-color: #6c63ff;
+    color: white;
+}
+
+.estilos button:hover {
+    background-color: #5046c7;
+    transform: scale(1.05);
 }
